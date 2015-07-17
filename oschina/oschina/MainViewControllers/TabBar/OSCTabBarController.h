@@ -1,5 +1,5 @@
 //
-//  OSCObjsViewController.h
+//  OSCTabBarController.h
 //  oschina
 //
 //  Created by 钱辰 on 15/7/17.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OSCObjsViewController : UITableViewController
+@interface OSCTabBarController : UITabBarController
+
+@property (nonatomic, strong) UIButton *centerButton;
 
 @end
