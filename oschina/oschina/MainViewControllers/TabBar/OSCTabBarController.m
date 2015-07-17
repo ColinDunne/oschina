@@ -20,6 +20,12 @@
     self.tabBar.translucent = NO;
     NSArray *titles = @[@"综合", @"动弹", @"", @"发现", @"我"];
     NSArray *images = @[@"tabbar-news", @"tabbar-tweet", @"", @"tabber-discover", @"tabbar-me"];
+    [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem *item, NSUInteger idx, BOOL *stop) {
+        [item setTitle:titles[idx]];
+        [item setImage:[UIImage imageNamed:images[idx]]];
+        [item setSelectedImage:[UIImage imageNamed:[images[idx] stringByAppendingString:@"-selected"]]];
+    }];
+    [self.tabBar.items[2] setEnabled:NO];
 }
 
 @end
