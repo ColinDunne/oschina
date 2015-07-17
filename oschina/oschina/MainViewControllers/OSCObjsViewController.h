@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OSCObjsViewController.h
 //  oschina
 //
 //  Created by 钱辰 on 15/7/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface OSCObjsViewController : UITableViewController
 
 @end
-
