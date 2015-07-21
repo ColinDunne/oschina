@@ -2,3 +2,4 @@ platform :ios, '8.4'
 
 pod 'AFOnoResponseSerializer'
 pod 'GPUImage'
+pod 'SDWebImage'
