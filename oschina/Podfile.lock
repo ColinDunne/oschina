@@ -20,14 +20,20 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AFOnoResponseSerializer (1.0.0):
+    - AFNetworking (~> 2.2)
+    - Ono (~> 1.0)
   - GPUImage (0.1.7)
+  - Ono (1.2.2)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFOnoResponseSerializer
   - GPUImage
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AFOnoResponseSerializer: c02c8bef1d6742ac68f33ecaed41826c9657bc33
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Ono: 80b1c686777d3f6d5d5ce6fcac8a74afef4ca197
 
 COCOAPODS: 0.37.2
