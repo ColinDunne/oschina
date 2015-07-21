@@ -340,6 +340,10 @@
 		D0495CA91B58FBCA00A3B74F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0495CA81B58FBCA00A3B74F /* Images.xcassets */; };
 		D0495CAC1B58FBCA00A3B74F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0495CAA1B58FBCA00A3B74F /* LaunchScreen.xib */; };
 		D0495CB81B58FBCA00A3B74F /* oschinaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0495CB71B58FBCA00A3B74F /* oschinaTests.m */; };
+		D0D2A22A1B5CD28D00FB4B26 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A2291B5CD28D00FB4B26 /* UIColor+Util.m */; };
+		D0D2A22D1B5CED8500FB4B26 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A22C1B5CED8500FB4B26 /* UIImage+Util.m */; };
+		D0D2A2301B5CFFA100FB4B26 /* OptionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A22F1B5CFFA100FB4B26 /* OptionButton.m */; };
+		D0D2A2331B5DEABC00FB4B26 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A2321B5DEABC00FB4B26 /* UIView+Util.m */; };
 		F1DFBBDBE4C5AC6DE96C134A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58458C012E2CBC590971CDA9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -696,6 +700,14 @@
 		D0495CB11B58FBCA00A3B74F /* oschinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oschinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0495CB61B58FBCA00A3B74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0495CB71B58FBCA00A3B74F /* oschinaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oschinaTests.m; sourceTree = "<group>"; };
+		D0D2A2281B5CD28D00FB4B26 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Util.h"; path = "Utils/Catagory/UIColor+Util.h"; sourceTree = "<group>"; };
+		D0D2A2291B5CD28D00FB4B26 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Util.m"; path = "Utils/Catagory/UIColor+Util.m"; sourceTree = "<group>"; };
+		D0D2A22B1B5CED8500FB4B26 /* UIImage+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Util.h"; path = "Utils/Catagory/UIImage+Util.h"; sourceTree = "<group>"; };
+		D0D2A22C1B5CED8500FB4B26 /* UIImage+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Util.m"; path = "Utils/Catagory/UIImage+Util.m"; sourceTree = "<group>"; };
+		D0D2A22E1B5CFFA100FB4B26 /* OptionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionButton.h; path = MainViewControllers/TabBar/OptionButton.h; sourceTree = "<group>"; };
+		D0D2A22F1B5CFFA100FB4B26 /* OptionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionButton.m; path = MainViewControllers/TabBar/OptionButton.m; sourceTree = "<group>"; };
+		D0D2A2311B5DEABC00FB4B26 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Util.h"; path = "Utils/Catagory/UIView+Util.h"; sourceTree = "<group>"; };
+		D0D2A2321B5DEABC00FB4B26 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Util.m"; path = "Utils/Catagory/UIView+Util.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -739,6 +751,8 @@
 			children = (
 				D0102C991B5907B30008F938 /* OSCTabBarController.h */,
 				D0102C9A1B5907B30008F938 /* OSCTabBarController.m */,
+				D0D2A22E1B5CFFA100FB4B26 /* OptionButton.h */,
+				D0D2A22F1B5CFFA100FB4B26 /* OptionButton.m */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
@@ -1220,6 +1234,7 @@
 		D0495C9A1B58FBCA00A3B74F /* oschina */ = {
 			isa = PBXGroup;
 			children = (
+				D0D2A2221B5C9ECE00FB4B26 /* Utils */,
 				D0495CC31B5900B000A3B74F /* MainViewControllers */,
 				D0495C9F1B58FBCA00A3B74F /* AppDelegate.h */,
 				D0495CA01B58FBCA00A3B74F /* AppDelegate.m */,
@@ -1263,6 +1278,27 @@
 				D0102C981B5906FA0008F938 /* TabBar */,
 			);
 			name = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		D0D2A2221B5C9ECE00FB4B26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0D2A2231B5C9EDE00FB4B26 /* Catagory */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D0D2A2231B5C9EDE00FB4B26 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				D0D2A2281B5CD28D00FB4B26 /* UIColor+Util.h */,
+				D0D2A2291B5CD28D00FB4B26 /* UIColor+Util.m */,
+				D0D2A22B1B5CED8500FB4B26 /* UIImage+Util.h */,
+				D0D2A22C1B5CED8500FB4B26 /* UIImage+Util.m */,
+				D0D2A2311B5DEABC00FB4B26 /* UIView+Util.h */,
+				D0D2A2321B5DEABC00FB4B26 /* UIView+Util.m */,
+			);
+			name = Catagory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1727,8 +1763,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0102C9B1B5907B30008F938 /* OSCTabBarController.m in Sources */,
+				D0D2A2331B5DEABC00FB4B26 /* UIView+Util.m in Sources */,
 				D0495CA11B58FBCA00A3B74F /* AppDelegate.m in Sources */,
+				D0D2A2301B5CFFA100FB4B26 /* OptionButton.m in Sources */,
 				D0495C9E1B58FBCA00A3B74F /* main.m in Sources */,
+				D0D2A22A1B5CD28D00FB4B26 /* UIColor+Util.m in Sources */,
+				D0D2A22D1B5CED8500FB4B26 /* UIImage+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
